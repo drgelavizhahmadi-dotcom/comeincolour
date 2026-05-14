@@ -154,7 +154,7 @@
       overflow: hidden;
       background: var(--lavender-pale);
     }
-    .mh-photo--main  { grid-column: 1 / -1; aspect-ratio: 16 / 6; }
+    .mh-photo--main    { grid-column: 1 / -1; aspect-ratio: 16 / 6; }
     .mh-photo--portrait { aspect-ratio: 3 / 4; }
     .mh-photo img {
       width: 100%;
@@ -217,10 +217,7 @@
     }
 
     /* ── QUOTE BANNER ── */
-    .mh-quote-banner {
-      background: var(--lemon);
-      text-align: center;
-    }
+    .mh-quote-banner { background: var(--lemon); text-align: center; }
     .mh-quote-banner__text {
       font-family: var(--font-serif);
       font-size: clamp(20px, 3vw, 32px);
@@ -234,15 +231,8 @@
 
     /* ── CTA ── */
     .mh-cta { background: #f0ebfa; text-align: center; }
-    .mh-cta h2 {
-      max-width: 580px;
-      margin: 0 auto 20px;
-    }
-    .mh-cta p {
-      max-width: 440px;
-      margin: 0 auto 40px;
-      opacity: 0.62;
-    }
+    .mh-cta h2 { max-width: 580px; margin: 0 auto 20px; }
+    .mh-cta p { max-width: 440px; margin: 0 auto 40px; opacity: 0.62; }
     .mh-cta__btns {
       display: flex;
       gap: 12px;
@@ -264,7 +254,7 @@
     }
   </style>
 </head>
-<body>
+<body data-page-title="page.title.motherhood">
 
   <!-- ── NAVIGATION ── -->
   <nav id="nav">
@@ -279,39 +269,43 @@
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="../index.html#about">About</a>
+      <a href="../index.html#about" data-i18n="nav.about">About</a>
       <div class="nav-dropdown">
-        <a href="../index.html#gatherings" class="nav-dropdown__trigger">Gatherings</a>
+        <a href="../index.html#gatherings" class="nav-dropdown__trigger" data-i18n="nav.gatherings">Gatherings</a>
         <div class="nav-dropdown__menu">
-          <a href="../index.html#gatherings">All gatherings</a>
-          <a href="motherhood.html" class="nav-dropdown__active">Colours of Motherhood</a>
+          <a href="../index.html#gatherings" data-i18n="nav.gatherings.all">All gatherings</a>
+          <a href="motherhood.html" class="nav-dropdown__active" data-i18n="nav.gatherings.motherhood">Colours of Motherhood</a>
         </div>
       </div>
-      <a href="../index.html#who">Who it's for</a>
-      <a href="../index.html#manifesto">Manifesto</a>
-      <a href="../index.html#join" class="nav-cta">Join a circle</a>
+      <a href="../index.html#who" data-i18n="nav.who">Who it's for</a>
+      <a href="../index.html#manifesto" data-i18n="nav.manifesto">Manifesto</a>
+      <a href="../index.html#join" class="nav-cta" data-i18n="nav.join">Join a circle</a>
+      <div class="nav-lang">
+        <button class="lang-btn lang-btn--active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
     </div>
   </nav>
 
   <!-- ── HERO ── -->
   <section class="mh-hero">
     <div class="container">
-      <a href="../index.html" class="mh-back">← Come In Colour</a>
-      <span class="mh-hero__tag">Creative Gathering · Berlin</span>
-      <h1>Colours of<br>Motherhood</h1>
-      <p class="mh-hero__sub">Paint, write, and be held — the day before Mother's Day</p>
+      <a href="../index.html" class="mh-back" data-i18n="mh.back">← Come In Colour</a>
+      <span class="mh-hero__tag" data-i18n="mh.hero.tag">Creative Gathering · Berlin</span>
+      <h1 data-i18n="mh.hero.h1">Colours of<br>Motherhood</h1>
+      <p class="mh-hero__sub" data-i18n="mh.hero.sub">Paint, write, and be held — the day before Mother's Day</p>
       <div class="mh-hero__meta">
-        <span>9 May 2025</span>
+        <span data-i18n="mh.hero.meta.date">9 May 2025</span>
         <span class="sep">·</span>
-        <span>16:00–19:00</span>
+        <span data-i18n="mh.hero.meta.time">16:00–19:00</span>
         <span class="sep">·</span>
-        <span>CISpace · Bugenhagenstr. 9</span>
+        <span data-i18n="mh.hero.meta.place">CISpace · Bugenhagenstr. 9</span>
         <span class="sep">·</span>
-        <span>Women 35+</span>
+        <span data-i18n="mh.hero.meta.who">Women 35+</span>
         <span class="sep">·</span>
-        <span>Donation €25</span>
+        <span data-i18n="mh.hero.meta.don">Donation €25</span>
       </div>
-      <a href="../index.html#join" class="btn btn--fill">Join the next circle →</a>
+      <a href="../index.html#join" class="btn btn--fill" data-i18n="mh.hero.cta">Join the next circle →</a>
     </div>
   </section>
 
@@ -319,11 +313,11 @@
   <section class="mh-about section">
     <div class="container">
       <div class="mh-about__inner" data-animate="fadeUp">
-        <span class="eyebrow">About this gathering</span>
-        <h2>The day before Mother's Day, we <em>gathered</em></h2>
-        <p>Not every woman in the room was a mother. Not every mother had been well-mothered. We didn't ask anyone to explain their story or justify their presence.</p>
-        <p>We gave everyone a canvas, some blank pages, and a circle of women who were already there. What came out of it surprised us every time — tenderness, grief, colour, and something that kept feeling like relief.</p>
-        <p>This is not a class. There is no outcome. You bring what you carry, and you leave a little lighter.</p>
+        <span class="eyebrow" data-i18n="mh.about.eyebrow">About this gathering</span>
+        <h2 data-i18n="mh.about.h2">The day before Mother's Day, we <em>gathered</em></h2>
+        <p data-i18n="mh.about.p1">Not every woman in the room was a mother. Not every mother had been well-mothered. We didn't ask anyone to explain their story or justify their presence.</p>
+        <p data-i18n="mh.about.p2">We gave everyone a canvas, some blank pages, and a circle of women who were already there. What came out of it surprised us every time — tenderness, grief, colour, and something that kept feeling like relief.</p>
+        <p data-i18n="mh.about.p3">This is not a class. There is no outcome. You bring what you carry, and you leave a little lighter.</p>
       </div>
     </div>
   </section>
@@ -331,23 +325,23 @@
   <!-- ── WHAT HAPPENS ── -->
   <section class="mh-happens section">
     <div class="container">
-      <span class="eyebrow">What happens</span>
-      <h2>Three hours. Three things.</h2>
+      <span class="eyebrow" data-i18n="mh.happens.eyebrow">What happens</span>
+      <h2 data-i18n="mh.happens.h2">Three hours. Three things.</h2>
       <div class="mh-happens__grid">
         <div class="mh-card mh-card--write" data-animate="fadeUp" data-delay="0">
-          <div class="mh-card__verb">01 · Write</div>
-          <h3>A letter</h3>
-          <p>To the mother you needed — whether she was yours, a stranger, or someone you have only imagined. You don't need to send it. You just need to write it.</p>
+          <div class="mh-card__verb" data-i18n="mh.card1.verb">01 · Write</div>
+          <h3 data-i18n="mh.card1.h3">A letter</h3>
+          <p data-i18n="mh.card1.p">To the mother you needed — whether she was yours, a stranger, or someone you have only imagined. You don't need to send it. You just need to write it.</p>
         </div>
         <div class="mh-card mh-card--paint" data-animate="fadeUp" data-delay="0.1">
-          <div class="mh-card__verb">02 · Paint</div>
-          <h3>Her portrait</h3>
-          <p>Not what she looked like. What she felt like. What she might have given you, in colour, if she had known how.</p>
+          <div class="mh-card__verb" data-i18n="mh.card2.verb">02 · Paint</div>
+          <h3 data-i18n="mh.card2.h3">Her portrait</h3>
+          <p data-i18n="mh.card2.p">Not what she looked like. What she felt like. What she might have given you, in colour, if she had known how.</p>
         </div>
         <div class="mh-card mh-card--held" data-animate="fadeUp" data-delay="0.2">
-          <div class="mh-card__verb">03 · Be held</div>
-          <h3>In the circle</h3>
-          <p>We share what we made. We witness each other. No explanations required. We close with food, and with the quiet knowledge that we were not alone.</p>
+          <div class="mh-card__verb" data-i18n="mh.card3.verb">03 · Be held</div>
+          <h3 data-i18n="mh.card3.h3">In the circle</h3>
+          <p data-i18n="mh.card3.p">We share what we made. We witness each other. No explanations required. We close with food, and with the quiet knowledge that we were not alone.</p>
         </div>
       </div>
     </div>
@@ -356,8 +350,8 @@
   <!-- ── PHOTOS ── -->
   <section class="mh-photos section">
     <div class="container">
-      <span class="eyebrow">From the room</span>
-      <h2>What it looked like</h2>
+      <span class="eyebrow" data-i18n="mh.photos.eyebrow">From the room</span>
+      <h2 data-i18n="mh.photos.h2">What it looked like</h2>
       <div class="mh-photos__grid">
 
         <div class="mh-photo mh-photo--main" data-animate="fadeUp" data-delay="0">
@@ -391,8 +385,8 @@
   <!-- ── TESTIMONIES ── -->
   <section class="mh-testimonies section">
     <div class="container">
-      <span class="eyebrow">In their words</span>
-      <h2>What women said</h2>
+      <span class="eyebrow" data-i18n="mh.test.eyebrow">In their words</span>
+      <h2 data-i18n="mh.test.h2">What women said</h2>
       <div class="mh-testimonies__grid">
 
         <div class="mh-testimony" data-animate="fadeLeft">
@@ -412,7 +406,7 @@
   <!-- ── QUOTE BANNER ── -->
   <section class="mh-quote-banner section">
     <div class="container">
-      <p class="mh-quote-banner__text" data-animate="fadeUp">
+      <p class="mh-quote-banner__text" data-animate="fadeUp" data-i18n="mh.quote">
         "You came here today and you made something. You imagined a mother who saw you clearly, loved you without condition, and gave you what you needed. That imagination lives in you. It always did."
       </p>
     </div>
@@ -421,12 +415,12 @@
   <!-- ── NEXT SESSION CTA ── -->
   <section class="mh-cta section">
     <div class="container">
-      <span class="eyebrow">Come join us</span>
-      <h2>The next circle is <em>forming</em></h2>
-      <p>Gatherings are held in Berlin. A small donation of €25 keeps this circle alive. No one is turned away.</p>
+      <span class="eyebrow" data-i18n="mh.cta.eyebrow">Come join us</span>
+      <h2 data-i18n="mh.cta.h2">The next circle is <em>forming</em></h2>
+      <p data-i18n="mh.cta.p">Gatherings are held in Berlin. A small donation of €25 keeps this circle alive. No one is turned away.</p>
       <div class="mh-cta__btns">
-        <a href="../index.html#join" class="btn btn--fill">Join a circle →</a>
-        <a href="../index.html#gatherings" class="btn btn--ghost">All gatherings</a>
+        <a href="../index.html#join" class="btn btn--fill" data-i18n="mh.cta.btn1">Join a circle →</a>
+        <a href="../index.html#gatherings" class="btn btn--ghost" data-i18n="mh.cta.btn2">All gatherings</a>
       </div>
     </div>
   </section>
@@ -446,10 +440,11 @@
         <a href="mailto:hello@comeincolour.org">Contact</a>
         <a href="../index.html#join">Join</a>
       </nav>
-      <p class="footer__copy">© 2025 Come In Colour · Berlin</p>
+      <p class="footer__copy" data-i18n="footer.copy">© 2025 Come In Colour · Berlin</p>
     </div>
   </footer>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

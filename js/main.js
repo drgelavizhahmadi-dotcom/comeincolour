@@ -83,6 +83,10 @@
       console.log('New signup:', { name, email });
 
       // Success state
+      var i18n = window.CIC_I18N;
+      var lang  = i18n ? i18n.getLang() : 'en';
+      var tpl   = (i18n && i18n.T[lang] && i18n.T[lang]['join.success']) || 'Welcome to the circle, {{name}}. ✦';
+      var msg   = tpl.replace('{{name}}', name || (lang === 'de' ? 'Liebe' : 'lovely'));
       form.innerHTML = `
         <p style="
           font-family: 'Cormorant Garamond', serif;
@@ -93,7 +97,7 @@
           text-align: center;
           width: 100%;
           padding: 12px 0;
-        ">Welcome to the circle, ${name || 'lovely'}. ✦</p>
+        ">${msg}</p>
       `;
     });
   }

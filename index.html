@@ -15,8 +15,9 @@
   <link rel="stylesheet" href="css/style.css" />
   <script defer data-domain="comeincolour.org" src="https://plausible.io/js/script.js"></script>
 </head>
-<body>
+<body data-page-title="page.title.home">
 
+  <!-- ── NAVIGATION ── -->
   <nav id="nav">
     <a href="#hero" class="nav-logo" aria-label="Come In Colour home">
       <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="44" height="44" aria-hidden="true">
@@ -29,23 +30,29 @@
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#about">About</a>
+      <a href="#about" data-i18n="nav.about">About</a>
       <div class="nav-dropdown">
-        <a href="#gatherings" class="nav-dropdown__trigger">Gatherings</a>
+        <a href="#gatherings" class="nav-dropdown__trigger" data-i18n="nav.gatherings">Gatherings</a>
         <div class="nav-dropdown__menu">
-          <a href="#gatherings">All gatherings</a>
-          <a href="workshops/motherhood.html">Colours of Motherhood</a>
+          <a href="#gatherings" data-i18n="nav.gatherings.all">All gatherings</a>
+          <a href="workshops/motherhood.html" data-i18n="nav.gatherings.motherhood">Colours of Motherhood</a>
         </div>
       </div>
-      <a href="#who">Who it's for</a>
-      <a href="#manifesto">Manifesto</a>
-      <a href="#join" class="nav-cta">Join a circle</a>
+      <a href="#who" data-i18n="nav.who">Who it's for</a>
+      <a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a>
+      <a href="#join" class="nav-cta" data-i18n="nav.join">Join a circle</a>
+      <div class="nav-lang">
+        <button class="lang-btn lang-btn--active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
     </div>
   </nav>
 
+  <!-- ── HERO ── -->
   <section class="hero" id="hero">
     <div class="hero-blob hero-blob--lemon" aria-hidden="true"></div>
     <div class="hero-blob hero-blob--lavender" aria-hidden="true"></div>
+
     <div class="hero-logo" data-animate="fadeUp">
       <svg viewBox="0 0 340 390" xmlns="http://www.w3.org/2000/svg" width="200" height="230" aria-label="Come In Colour logo">
         <path d="M 170 30 A 140 140 0 0 0 30 170 A 140 140 0 0 0 170 310" stroke="#F0F08A" stroke-width="10" fill="none" stroke-linecap="round"/>
@@ -53,157 +60,165 @@
         <text x="170" y="132" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="46" font-weight="600" fill="#F0F08A" letter-spacing="1">come</text>
         <text x="170" y="187" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="46" font-weight="600" fill="#C9A8E8" letter-spacing="1">in</text>
         <text x="170" y="242" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="46" font-weight="600" fill="#C9A8E8" letter-spacing="1">colour</text>
-        <text x="170" y="356" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#C9A8E8" letter-spacing="4" opacity="0.8">CREATIVITY · SISTERHOOD · BERLIN</text>
+        <text x="170" y="356" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#C9A8E8" letter-spacing="4" opacity="0.8" data-i18n="hero.tagline">CREATIVITY · SISTERHOOD · BERLIN</text>
       </svg>
     </div>
-    <p class="hero-sub" data-animate="fadeUp" data-delay="0.2">
+
+    <p class="hero-sub" data-animate="fadeUp" data-delay="0.2" data-i18n="hero.sub">
       Creative gatherings for women 35+ in Berlin.<br>
       Come as you are. Leave in colour.
     </p>
+
     <div class="hero-btns" data-animate="fadeUp" data-delay="0.35">
-      <a href="#join" class="btn btn--fill">Join a circle</a>
-      <a href="#about" class="btn btn--ghost">Our story</a>
+      <a href="#join" class="btn btn--fill" data-i18n="hero.btn.join">Join a circle</a>
+      <a href="#about" class="btn btn--ghost" data-i18n="hero.btn.story">Our story</a>
     </div>
+
     <div class="hero-location" data-animate="fadeUp" data-delay="0.5">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7.4 13.5 7.7 13.8a.4.4 0 0 0 .6 0C12.6 23.5 20 15.4 20 10a8 8 0 0 0-8-8z"/></svg>
-      Berlin, Germany
+      <span data-i18n="hero.location">Berlin, Germany</span>
     </div>
   </section>
 
+  <!-- ── MARQUEE ── -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee__inner">
-      <span>come as you are</span><span class="marquee__dot">·</span>
-      <span>creativity &amp; sisterhood</span><span class="marquee__dot">·</span>
-      <span>colour as a language</span><span class="marquee__dot">·</span>
-      <span>berlin</span><span class="marquee__dot">·</span>
-      <span>leave in colour</span><span class="marquee__dot">·</span>
-      <span>women 35+</span><span class="marquee__dot">·</span>
-      <span>come as you are</span><span class="marquee__dot">·</span>
-      <span>creativity &amp; sisterhood</span><span class="marquee__dot">·</span>
-      <span>colour as a language</span><span class="marquee__dot">·</span>
-      <span>berlin</span><span class="marquee__dot">·</span>
-      <span>leave in colour</span><span class="marquee__dot">·</span>
-      <span>women 35+</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.1">come as you are</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.2">creativity &amp; sisterhood</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.3">colour as a language</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.4">berlin</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.5">leave in colour</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.6">women 35+</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.1">come as you are</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.2">creativity &amp; sisterhood</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.3">colour as a language</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.4">berlin</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.5">leave in colour</span><span class="marquee__dot">·</span>
+      <span data-i18n="marquee.6">women 35+</span><span class="marquee__dot">·</span>
     </div>
   </div>
 
+  <!-- ── ABOUT ── -->
   <section class="about section" id="about">
     <div class="container about__grid">
       <div class="about__art" data-animate="fadeLeft">
         <img src="images/illustration-about.png"
-             alt="Colours of Motherhood — a woman with colour blooming inside her"
+             alt="A woman with colour blooming inside her"
              style="width:100%; max-width:340px; display:block; margin:0 auto;" />
       </div>
       <div class="about__text" data-animate="fadeRight">
-        <span class="eyebrow">Our story</span>
-        <h2>Making space for women who've made space for <em>everyone else</em></h2>
-        <p><strong>Come In Colour</strong> is a Berlin-based community of women 35 and over who gather to paint, write, and be held — in a room where nothing needs to be explained and nothing needs to be perfect.</p>
-        <p>Founded by two women — one with a background in <strong>creativity and design</strong>, one in <strong>expressive arts</strong> — we create spaces where colour is the language, and showing up is enough.</p>
-        <p>You don't need to be an artist. You just need to show up.</p>
-        <a href="#join" class="btn btn--fill" style="margin-top: 2rem; display: inline-block;">Join us →</a>
+        <span class="eyebrow" data-i18n="about.eyebrow">Our story</span>
+        <h2 data-i18n="about.h2">Making space for women who've made space for <em>everyone else</em></h2>
+        <p data-i18n="about.p1"><strong>Come In Colour</strong> is a Berlin-based community of women 35 and over who gather to paint, write, and be held — in a room where nothing needs to be explained and nothing needs to be perfect.</p>
+        <p data-i18n="about.p2">Founded by two women — one with a background in <strong>creativity and design</strong>, one in <strong>expressive arts</strong> — we create spaces where colour is the language, and showing up is enough.</p>
+        <p data-i18n="about.p3">You don't need to be an artist. You just need to show up.</p>
+        <a href="#join" class="btn btn--fill" style="margin-top: 2rem; display: inline-block;" data-i18n="about.btn">Join us →</a>
       </div>
     </div>
   </section>
 
+  <!-- ── PILLARS ── -->
   <section class="pillars section">
     <div class="container pillars__grid">
       <div class="pillar pillar--lemon" data-animate="fadeUp" data-delay="0">
         <div class="pillar__num">01</div>
-        <h3>Creativity</h3>
-        <p>Painting, writing, making — with your hands, at your own pace. No skill needed. No outcome required.</p>
+        <h3 data-i18n="pillar.1.h3">Creativity</h3>
+        <p data-i18n="pillar.1.p">Painting, writing, making — with your hands, at your own pace. No skill needed. No outcome required.</p>
       </div>
       <div class="pillar pillar--lavender" data-animate="fadeUp" data-delay="0.1">
         <div class="pillar__num">02</div>
-        <h3>Sisterhood</h3>
-        <p>Small circles of women who return together. Trust built slowly, held gently, lasting long after the session ends.</p>
+        <h3 data-i18n="pillar.2.h3">Sisterhood</h3>
+        <p data-i18n="pillar.2.p">Small circles of women who return together. Trust built slowly, held gently, lasting long after the session ends.</p>
       </div>
       <div class="pillar pillar--outline" data-animate="fadeUp" data-delay="0.2">
         <div class="pillar__num">03</div>
-        <h3>Empathy</h3>
-        <p>A room where every story is welcome. No fixing, no advice — only the quiet power of being witnessed.</p>
+        <h3 data-i18n="pillar.3.h3">Empathy</h3>
+        <p data-i18n="pillar.3.p">A room where every story is welcome. No fixing, no advice — only the quiet power of being witnessed.</p>
       </div>
     </div>
   </section>
 
+  <!-- ── WHO IT'S FOR ── -->
   <section class="who section" id="who">
     <div class="container">
-      <span class="eyebrow">Who this is for</span>
-      <h2>Every woman carrying more than anyone thought to ask about</h2>
+      <span class="eyebrow" data-i18n="who.eyebrow">Who this is for</span>
+      <h2 data-i18n="who.h2">Every woman carrying more than anyone thought to ask about</h2>
       <div class="who__grid">
         <article class="who-card" data-animate="fadeUp" data-delay="0">
           <div class="who-card__dot who-card__dot--lemon"></div>
-          <h3>Newly arrived</h3>
-          <p>Rebuilding identity in a new language, a new city, a new life. You belong here even before Berlin feels like home.</p>
+          <h3 data-i18n="who.1.h3">Newly arrived</h3>
+          <p data-i18n="who.1.p">Rebuilding identity in a new language, a new city, a new life. You belong here even before Berlin feels like home.</p>
         </article>
         <article class="who-card" data-animate="fadeUp" data-delay="0.08">
           <div class="who-card__dot who-card__dot--lavender"></div>
-          <h3>In transition</h3>
-          <p>Divorced, separated, or starting over. Women whose map changed and who are finding a new route.</p>
+          <h3 data-i18n="who.2.h3">In transition</h3>
+          <p data-i18n="who.2.p">Divorced, separated, or starting over. Women whose map changed and who are finding a new route.</p>
         </article>
         <article class="who-card" data-animate="fadeUp" data-delay="0.16">
           <div class="who-card__dot who-card__dot--lemon"></div>
-          <h3>Carrying it all</h3>
-          <p>Working mothers, single parents, carers — women who give everything and have never been asked what they need.</p>
+          <h3 data-i18n="who.3.h3">Carrying it all</h3>
+          <p data-i18n="who.3.p">Working mothers, single parents, carers — women who give everything and have never been asked what they need.</p>
         </article>
         <article class="who-card" data-animate="fadeUp" data-delay="0.24">
           <div class="who-card__dot who-card__dot--lavender"></div>
-          <h3>Professionally invisible</h3>
-          <p>Skilled and experienced, but whose qualifications or language make them feel unseen at work.</p>
+          <h3 data-i18n="who.4.h3">Professionally invisible</h3>
+          <p data-i18n="who.4.p">Skilled and experienced, but whose qualifications or language make them feel unseen at work.</p>
         </article>
         <article class="who-card" data-animate="fadeUp" data-delay="0.32">
           <div class="who-card__dot who-card__dot--lemon"></div>
-          <h3>Quietly searching</h3>
-          <p>Women who woke up one day not quite recognising themselves — and are brave enough to find out who they're becoming.</p>
+          <h3 data-i18n="who.5.h3">Quietly searching</h3>
+          <p data-i18n="who.5.p">Women who woke up one day not quite recognising themselves — and are brave enough to find out who they're becoming.</p>
         </article>
         <article class="who-card" data-animate="fadeUp" data-delay="0.4">
           <div class="who-card__dot who-card__dot--lavender"></div>
-          <h3>Simply here</h3>
-          <p>No crisis required. Just a hunger for a room to breathe, create, and belong.</p>
+          <h3 data-i18n="who.6.h3">Simply here</h3>
+          <p data-i18n="who.6.p">No crisis required. Just a hunger for a room to breathe, create, and belong.</p>
         </article>
       </div>
     </div>
   </section>
 
+  <!-- ── WORKSHOPS / GATHERINGS ── -->
   <section class="workshops section" id="gatherings">
     <div class="container">
-      <span class="eyebrow">What we offer</span>
-      <h2>Six gatherings. One unfolding journey.</h2>
+      <span class="eyebrow" data-i18n="ws.eyebrow">What we offer</span>
+      <h2 data-i18n="ws.h2">Six gatherings. One unfolding journey.</h2>
       <div class="ws__grid">
         <article class="ws-card ws-card--lemon" data-animate="fadeUp" data-delay="0">
           <div class="ws-card__num">01</div>
-          <h3>The Quiet Room</h3>
-          <p>Slow, meditative making. No outcomes, no performance — just the brush, the colour, and you.</p>
-          <span class="tag">Stillness · Colour</span>
+          <h3 data-i18n="ws.1.h3">The Quiet Room</h3>
+          <p data-i18n="ws.1.p">Slow, meditative making. No outcomes, no performance — just the brush, the colour, and you.</p>
+          <span class="tag" data-i18n="ws.1.tag">Stillness · Colour</span>
         </article>
         <article class="ws-card ws-card--lavender" data-animate="fadeUp" data-delay="0.08">
           <div class="ws-card__num">02</div>
-          <h3>Roots &amp; Routes</h3>
-          <p>Visual maps for women between worlds. Your language, your colours, your story.</p>
-          <span class="tag">Identity · Belonging</span>
+          <h3 data-i18n="ws.2.h3">Roots &amp; Routes</h3>
+          <p data-i18n="ws.2.p">Visual maps for women between worlds. Your language, your colours, your story.</p>
+          <span class="tag" data-i18n="ws.2.tag">Identity · Belonging</span>
         </article>
         <article class="ws-card ws-card--dark" data-animate="fadeUp" data-delay="0.16">
           <div class="ws-card__num">03</div>
-          <h3>The Unsent Letter</h3>
-          <p>Write what you never got to say. Then paint over it, tear it apart, or let it go.</p>
-          <span class="tag tag--light">Writing · Release</span>
+          <h3 data-i18n="ws.3.h3">The Unsent Letter</h3>
+          <p data-i18n="ws.3.p">Write what you never got to say. Then paint over it, tear it apart, or let it go.</p>
+          <span class="tag tag--light" data-i18n="ws.3.tag">Writing · Release</span>
         </article>
         <article class="ws-card ws-card--outline" data-animate="fadeUp" data-delay="0.24">
           <div class="ws-card__num">04</div>
-          <h3>Sisterhood Portrait</h3>
-          <p>Draw each other. See and be seen — really seen — for the first time in a long time.</p>
-          <span class="tag">Community · Connection</span>
+          <h3 data-i18n="ws.4.h3">Sisterhood Portrait</h3>
+          <p data-i18n="ws.4.p">Draw each other. See and be seen — really seen — for the first time in a long time.</p>
+          <span class="tag" data-i18n="ws.4.tag">Community · Connection</span>
         </article>
         <article class="ws-card ws-card--lavender" data-animate="fadeUp" data-delay="0.32">
           <div class="ws-card__num">05</div>
-          <h3>Colours of Motherhood</h3>
-          <p>Paint, write, and be held — a gathering about mothers, daughters, and the colours between.</p>
-          <span class="tag">Motherhood · Memory</span>
+          <h3 data-i18n="ws.5.h3">Colours of Motherhood</h3>
+          <p data-i18n="ws.5.p">Paint, write, and be held — a gathering about mothers, daughters, and the colours between.</p>
+          <span class="tag" data-i18n="ws.5.tag">Motherhood · Memory</span>
         </article>
         <article class="ws-card ws-card--lemon" data-animate="fadeUp" data-delay="0.4">
           <div class="ws-card__num">06</div>
-          <h3>The Long Table</h3>
-          <p>One canvas, all of us. A communal making ritual followed by a shared meal.</p>
-          <span class="tag">Ritual · Celebration</span>
+          <h3 data-i18n="ws.6.h3">The Long Table</h3>
+          <p data-i18n="ws.6.p">One canvas, all of us. A communal making ritual followed by a shared meal.</p>
+          <span class="tag" data-i18n="ws.6.tag">Ritual · Celebration</span>
         </article>
       </div>
     </div>
@@ -214,14 +229,14 @@
     <div class="container">
       <div class="gathering-preview__inner">
         <div class="gathering-preview__content" data-animate="fadeLeft">
-          <span class="eyebrow">From our last gathering</span>
-          <h2>Colours of <em>Motherhood</em></h2>
-          <p class="gathering-preview__date">9 May 2025 · CISpace · Berlin</p>
+          <span class="eyebrow" data-i18n="preview.eyebrow">From our last gathering</span>
+          <h2 data-i18n="preview.h2">Colours of <em>Motherhood</em></h2>
+          <p class="gathering-preview__date" data-i18n="preview.date">9 May 2025 · CISpace · Berlin</p>
           <blockquote class="gathering-preview__quote">
             "I came not knowing what to expect. I left having painted a face I have never seen but somehow always known. Something shifted in that room — quietly, without anyone telling me what to feel."
             <cite>— Shahla</cite>
           </blockquote>
-          <a href="workshops/motherhood.html" class="btn btn--fill">Read more →</a>
+          <a href="workshops/motherhood.html" class="btn btn--fill" data-i18n="preview.btn">Read more →</a>
         </div>
         <div class="gathering-preview__photo" data-animate="fadeRight">
           <img src="images/motherhood-photo-1.jpg" alt="Colours of Motherhood gathering, Berlin" />
@@ -230,36 +245,39 @@
     </div>
   </section>
 
+  <!-- ── MANIFESTO ── -->
   <section class="manifesto section" id="manifesto">
     <div class="container manifesto__inner">
-      <p class="manifesto__label">— what we believe —</p>
+      <p class="manifesto__label" data-i18n="manifesto.label">— what we believe —</p>
       <div class="manifesto__lines">
-        <p class="m-line">We believe every woman carries a colour the world never asked to see.</p>
-        <p class="m-line m-line--alt">We believe you don't need to be an artist to make something true.</p>
-        <p class="m-line">We believe colour is a language anyone can speak.</p>
-        <p class="m-line m-line--alt">We believe migration is not a deficit. It is a second palette.</p>
-        <p class="m-line">We believe sisterhood is the most durable infrastructure there is.</p>
-        <p class="m-line m-line--alt">We believe a room full of women making things together is quietly radical.</p>
-        <p class="m-line m-line--final">So come in. Come in colour.</p>
+        <p class="m-line" data-i18n="manifesto.1">We believe every woman carries a colour the world never asked to see.</p>
+        <p class="m-line m-line--alt" data-i18n="manifesto.2">We believe you don't need to be an artist to make something true.</p>
+        <p class="m-line" data-i18n="manifesto.3">We believe colour is a language anyone can speak.</p>
+        <p class="m-line m-line--alt" data-i18n="manifesto.4">We believe migration is not a deficit. It is a second palette.</p>
+        <p class="m-line" data-i18n="manifesto.5">We believe sisterhood is the most durable infrastructure there is.</p>
+        <p class="m-line m-line--alt" data-i18n="manifesto.6">We believe a room full of women making things together is quietly radical.</p>
+        <p class="m-line m-line--final" data-i18n="manifesto.final">So come in. Come in colour.</p>
       </div>
     </div>
   </section>
 
+  <!-- ── JOIN ── -->
   <section class="join section" id="join">
     <div class="join__blob" aria-hidden="true"></div>
     <div class="container join__inner">
-      <span class="eyebrow">Berlin · Donation based · Every woman welcome</span>
-      <h2>Join a<br><em>circle</em></h2>
-      <p>Creative gatherings held in Berlin. A small donation of €25 keeps this circle alive.<br>Come as you are.</p>
+      <span class="eyebrow" data-i18n="join.eyebrow">Berlin · Donation based · Every woman welcome</span>
+      <h2 data-i18n="join.h2">Join a<br><em>circle</em></h2>
+      <p data-i18n="join.p">Creative gatherings held in Berlin. A small donation of €25 keeps this circle alive.<br>Come as you are.</p>
       <form class="join__form" id="joinForm" novalidate>
-        <input type="text" name="name" placeholder="your name" autocomplete="name" />
-        <input type="email" name="email" placeholder="your email address" autocomplete="email" required />
-        <button type="submit" class="btn btn--fill">I'm in →</button>
+        <input type="text"  name="name"  data-i18n-placeholder="join.name.placeholder"  placeholder="your name"          autocomplete="name" />
+        <input type="email" name="email" data-i18n-placeholder="join.email.placeholder" placeholder="your email address" autocomplete="email" required />
+        <button type="submit" class="btn btn--fill" data-i18n="join.btn">I'm in →</button>
       </form>
-      <p class="join__note">No one is turned away. Come as you are.</p>
+      <p class="join__note" data-i18n="join.note">No one is turned away. Come as you are.</p>
     </div>
   </section>
 
+  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -274,11 +292,11 @@
         <a href="mailto:hello@comeincolour.org">Contact</a>
         <a href="#join">Join</a>
       </nav>
-      <p class="footer__copy">© 2025 Come In Colour · Berlin</p>
+      <p class="footer__copy" data-i18n="footer.copy">© 2025 Come In Colour · Berlin</p>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
-
